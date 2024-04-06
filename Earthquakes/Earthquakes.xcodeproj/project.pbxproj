@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7666EC912BC1CAB100E7C5D3 /* HTTPDataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7666EC902BC1CAB100E7C5D3 /* HTTPDataDownloader.swift */; };
 		76DC1A992BBF280100B9DE21 /* QuakeLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC1A982BBF280100B9DE21 /* QuakeLocation.swift */; };
 		76EAEEB72BBB1633008B6C2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAEEB62BBB1633008B6C2D /* AppDelegate.swift */; };
 		76EAEEB92BBB1633008B6C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAEEB82BBB1633008B6C2D /* SceneDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7666EC902BC1CAB100E7C5D3 /* HTTPDataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPDataDownloader.swift; sourceTree = "<group>"; };
 		76DC1A982BBF280100B9DE21 /* QuakeLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeLocation.swift; sourceTree = "<group>"; };
 		76EAEEB32BBB1633008B6C2D /* Earthquakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EAEEB62BBB1633008B6C2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				76EAEEBF2BBB1635008B6C2D /* Assets.xcassets */,
 				76EAEEC12BBB1635008B6C2D /* LaunchScreen.storyboard */,
 				76EAEEC42BBB1635008B6C2D /* Info.plist */,
+				7666EC902BC1CAB100E7C5D3 /* HTTPDataDownloader.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				76EAEEBB2BBB1633008B6C2D /* ViewController.swift in Sources */,
 				76DC1A992BBF280100B9DE21 /* QuakeLocation.swift in Sources */,
 				76EAEECC2BBB173A008B6C2D /* Quake.swift in Sources */,
+				7666EC912BC1CAB100E7C5D3 /* HTTPDataDownloader.swift in Sources */,
 				76EAEEB72BBB1633008B6C2D /* AppDelegate.swift in Sources */,
 				76EAEEB92BBB1633008B6C2D /* SceneDelegate.swift in Sources */,
 				76F90D652BBDD15C00024B57 /* GeoJSON.swift in Sources */,
