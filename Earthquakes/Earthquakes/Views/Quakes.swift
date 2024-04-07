@@ -36,7 +36,7 @@ struct Quakes: View {
     var body: some View {
         NavigationView {
             List(selection: $selection) {
-                ForEach(quakes) { quake in
+                ForEach(provider.quakes) { quake in
                     QuakeRow(quake: quake)
                 }
                 .onDelete(perform: deleteQuakes)
@@ -46,9 +46,12 @@ struct Quakes: View {
             .toolbar(content: toolbarContent)
             .environment(\.editMode, $editMode)
             .refreshable {
-                fetchQuakes()
+                await fetchQuakes()
             }
             .alert(isPresented: $hasError, error: error) {}
+        }
+        .task {
+            await fetchQuakes()
         }
     }
 }
@@ -60,11 +63,10 @@ extension Quakes {
         } else {
             return "\(selection.count) Selected"
         }
-        
     }
     
     func deleteQuakes(at offsets: IndexSet) {
-        quakes.remove(atOffsets: offsets)
+        provider.deleteQuakes(atOffsets: offsets)
     }
     
     func deleteQuakes(for codes: Set<String>) {
@@ -85,9 +87,8 @@ extension Quakes {
             lastUpdated = Date().timeIntervalSince1970
         } catch {
             self.error = error as? QuakeError ?? .unexpectedError(error: error)
+            self.hasError = true
         }
-        
-        
         isLoading = false
     }
 }
@@ -95,5 +96,8 @@ extension Quakes {
 struct Quakes_Previews: PreviewProvider {
     static var previews: some View {
         Quakes()
+            .environmentObject(
+                QuakesProvider(client:
+                                QuakeClient(downloader: TestDownloader())))
     }
 }

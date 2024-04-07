@@ -113,7 +113,6 @@
 		763D8DD62BC29D4B00B8CE18 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				7666EC902BC1CAB100E7C5D3 /* HTTPDataDownloader.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -157,8 +156,6 @@
 				763D8DD52BC29C8900B8CE18 /* Views */,
 				763D8DD12BC28D0D00B8CE18 /* Resources */,
 				76EAEECA2BBB1729008B6C2D /* Models */,
-				763D8DCF2BC284D200B8CE18 /* QuakeClient.swift */,
-				763D8DD72BC29DF400B8CE18 /* QuakesProvider.swift */,
 			);
 			path = Earthquakes;
 			sourceTree = "<group>";
@@ -166,6 +163,9 @@
 		76EAEECA2BBB1729008B6C2D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7666EC902BC1CAB100E7C5D3 /* HTTPDataDownloader.swift */,
+				763D8DCF2BC284D200B8CE18 /* QuakeClient.swift */,
+				763D8DD72BC29DF400B8CE18 /* QuakesProvider.swift */,
 				76EAEECB2BBB173A008B6C2D /* Quake.swift */,
 				76EAEECD2BBB2356008B6C2D /* QuakeError.swift */,
 				76F90D642BBDD15C00024B57 /* GeoJSON.swift */,
