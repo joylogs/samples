@@ -23,6 +23,7 @@
 		76E776172BC2E3D300302679 /* EditButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E776162BC2E3D300302679 /* EditButton.swift */; };
 		76E776192BC2E52500302679 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E776182BC2E52500302679 /* DeleteButton.swift */; };
 		76E7761B2BC2E5AF00302679 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7761A2BC2E5AF00302679 /* RefreshButton.swift */; };
+		76E7761D2BC2E72400302679 /* ToolbarStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7761C2BC2E72400302679 /* ToolbarStatus.swift */; };
 		76EAEEB92BBB1633008B6C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAEEB82BBB1633008B6C2D /* SceneDelegate.swift */; };
 		76EAEEC02BBB1635008B6C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EAEEBF2BBB1635008B6C2D /* Assets.xcassets */; };
 		76EAEEC32BBB1635008B6C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EAEEC12BBB1635008B6C2D /* LaunchScreen.storyboard */; };
@@ -59,6 +60,7 @@
 		76E776162BC2E3D300302679 /* EditButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditButton.swift; sourceTree = "<group>"; };
 		76E776182BC2E52500302679 /* DeleteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteButton.swift; sourceTree = "<group>"; };
 		76E7761A2BC2E5AF00302679 /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
+		76E7761C2BC2E72400302679 /* ToolbarStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarStatus.swift; sourceTree = "<group>"; };
 		76EAEEB32BBB1633008B6C2D /* Earthquakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76EAEEB82BBB1633008B6C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		76EAEEBF2BBB1635008B6C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				76E776142BC2E27A00302679 /* Quakes+Toolbar.swift */,
 				76E776122BC2DCB400302679 /* SelectButton.swift */,
 				76E7761A2BC2E5AF00302679 /* RefreshButton.swift */,
+				76E7761C2BC2E72400302679 /* ToolbarStatus.swift */,
 			);
 			path = ToolbarContent;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E7760C2BC2CABB00302679 /* QuakeMagnitude.swift in Sources */,
+				76E7761D2BC2E72400302679 /* ToolbarStatus.swift in Sources */,
 				76E776172BC2E3D300302679 /* EditButton.swift in Sources */,
 				763D8DD82BC29DF400B8CE18 /* QuakesProvider.swift in Sources */,
 				76EAEECE2BBB2356008B6C2D /* QuakeError.swift in Sources */,
