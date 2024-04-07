@@ -24,9 +24,7 @@
 		76E776192BC2E52500302679 /* DeleteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E776182BC2E52500302679 /* DeleteButton.swift */; };
 		76E7761B2BC2E5AF00302679 /* RefreshButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7761A2BC2E5AF00302679 /* RefreshButton.swift */; };
 		76E7761D2BC2E72400302679 /* ToolbarStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E7761C2BC2E72400302679 /* ToolbarStatus.swift */; };
-		76EAEEB92BBB1633008B6C2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAEEB82BBB1633008B6C2D /* SceneDelegate.swift */; };
 		76EAEEC02BBB1635008B6C2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76EAEEBF2BBB1635008B6C2D /* Assets.xcassets */; };
-		76EAEEC32BBB1635008B6C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76EAEEC12BBB1635008B6C2D /* LaunchScreen.storyboard */; };
 		76EAEECC2BBB173A008B6C2D /* Quake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAEECB2BBB173A008B6C2D /* Quake.swift */; };
 		76EAEECE2BBB2356008B6C2D /* QuakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAEECD2BBB2356008B6C2D /* QuakeError.swift */; };
 		76EAEED72BBB28B7008B6C2D /* EarthquakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAEED62BBB28B7008B6C2D /* EarthquakesTests.swift */; };
@@ -62,9 +60,7 @@
 		76E7761A2BC2E5AF00302679 /* RefreshButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshButton.swift; sourceTree = "<group>"; };
 		76E7761C2BC2E72400302679 /* ToolbarStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarStatus.swift; sourceTree = "<group>"; };
 		76EAEEB32BBB1633008B6C2D /* Earthquakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earthquakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		76EAEEB82BBB1633008B6C2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		76EAEEBF2BBB1635008B6C2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76EAEEC22BBB1635008B6C2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		76EAEEC42BBB1635008B6C2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76EAEECB2BBB173A008B6C2D /* Quake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quake.swift; sourceTree = "<group>"; };
 		76EAEECD2BBB2356008B6C2D /* QuakeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeError.swift; sourceTree = "<group>"; };
@@ -106,10 +102,10 @@
 		763D8DD52BC29C8900B8CE18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				76E776112BC2DC6200302679 /* ToolbarContent */,
 				76E775EF2BC2C27700302679 /* Quakes.swift */,
 				76E7760B2BC2CABB00302679 /* QuakeMagnitude.swift */,
 				76E7760F2BC2D36C00302679 /* QuakeRow.swift */,
+				76E776112BC2DC6200302679 /* ToolbarContent */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -161,8 +157,6 @@
 				763D8DD52BC29C8900B8CE18 /* Views */,
 				763D8DD12BC28D0D00B8CE18 /* Resources */,
 				76EAEECA2BBB1729008B6C2D /* Models */,
-				76EAEEB82BBB1633008B6C2D /* SceneDelegate.swift */,
-				76EAEEC12BBB1635008B6C2D /* LaunchScreen.storyboard */,
 				763D8DCF2BC284D200B8CE18 /* QuakeClient.swift */,
 				763D8DD72BC29DF400B8CE18 /* QuakesProvider.swift */,
 			);
@@ -270,7 +264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76EAEEC32BBB1635008B6C2D /* LaunchScreen.storyboard in Resources */,
 				76EAEEC02BBB1635008B6C2D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,7 +296,6 @@
 				7666EC912BC1CAB100E7C5D3 /* HTTPDataDownloader.swift in Sources */,
 				76E776132BC2DCB400302679 /* SelectButton.swift in Sources */,
 				763D8DD32BC290E500B8CE18 /* TestDownloader.swift in Sources */,
-				76EAEEB92BBB1633008B6C2D /* SceneDelegate.swift in Sources */,
 				763D8DD02BC284D200B8CE18 /* QuakeClient.swift in Sources */,
 				76E7760E2BC2CE5600302679 /* Quake+Color.swift in Sources */,
 				76F90D652BBDD15C00024B57 /* GeoJSON.swift in Sources */,
@@ -331,17 +323,6 @@
 			targetProxy = 76EAEED82BBB28B7008B6C2D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		76EAEEC12BBB1635008B6C2D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				76EAEEC22BBB1635008B6C2D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		76EAEEC52BBB1635008B6C2D /* Debug */ = {
@@ -469,8 +450,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Earthquakes/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -497,8 +477,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Earthquakes/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -16,7 +16,7 @@ struct EarthquakesApp: App {
 //            Text("Test")
             
             Quakes()
-//                .environmentObject(quakesProvider)
+                .environmentObject(quakesProvider)
         }
     }
 }
