@@ -43,7 +43,7 @@ struct Quakes: View {
             }
             .listStyle(.inset)
             .navigationTitle(title)
-//            .toolbar(content: toolba)
+            .toolbar(content: toolbarContent)
             .environment(\.editMode, $editMode)
             .refreshable {
                 fetchQuakes()
@@ -67,10 +67,27 @@ extension Quakes {
         quakes.remove(atOffsets: offsets)
     }
     
-    func fetchQuakes() {
+    func deleteQuakes(for codes: Set<String>) {
+        var offsetsToDelete: IndexSet = []
+        for (index, element) in quakes.enumerated() {
+            if codes.contains(element.code) {
+                offsetsToDelete.insert(index)
+            }
+        }
+        deleteQuakes(at: offsetsToDelete)
+        selection.removeAll()
+    }
+    
+    func fetchQuakes() async {
         isLoading = true
-        self.quakes = staticData
-        lastUpdated = Date().timeIntervalSinceNow
+        do {
+            try await provider.fetchQuakes()
+            lastUpdated = Date().timeIntervalSince1970
+        } catch {
+            self.error = error as? QuakeError ?? .unexpectedError(error: error)
+        }
+        
+        
         isLoading = false
     }
 }

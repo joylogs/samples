@@ -15,7 +15,6 @@ struct DeleteButton: View {
         } label: {
             Label("Delete", systemImage: "trash")
         }
-
     }
 }
 

@@ -23,9 +23,30 @@ extension Quakes {
             }
         }
         ToolbarItem(placement: .navigationBarTrailing) {
-//            EditButton() {
-//                
-//            }
+            EditButton(editMode: $editMode) {
+                selection.removeAll()
+                editMode = .inactive
+                selectMode = .inactive
+            }
+        }
+        ToolbarItem(placement: .bottomBar) {
+            RefreshButton {
+                Task {
+                    fetchQuakes
+                }
+            }
+            Spacer()
+            ToolbarStatus(isLoading: isLoading,
+                          lastUpdated: lastUpdated,
+                          quakesCount: quakes.count
+            )
+            Spacer()
+            if editMode == .active {
+                DeleteButton {
+                    deleteQuakes(for: selection)
+                }
+                .disabled(isLoading || selection.isEmpty)
+            }
         }
     }
 }
