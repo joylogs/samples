@@ -27,7 +27,7 @@ struct Quakes: View {
     @EnvironmentObject var provider: QuakesProvider
     @State var quakes = staticData
     @State var editMode: EditMode = .inactive
-//    @State var selectMode: SelectMode = .inactive
+    @State var selectMode: SelectMode = .inactive
     @State var isLoading = false
     @State var selection: Set<String> = []
     @State private var error: QuakeError?
@@ -55,7 +55,12 @@ struct Quakes: View {
 
 extension Quakes {
     var title: String {
-        return "Earthquakes"
+        if selectMode.isActive || selection.isEmpty {
+            return "Earthquakes"
+        } else {
+            return "\(selection.count) Selected"
+        }
+        
     }
     
     func deleteQuakes(at offsets: IndexSet) {
