@@ -25,6 +25,7 @@ struct Quakes: View {
     var lastUpdated = Date.distantFuture.timeIntervalSince1970
     
     @EnvironmentObject var provider: QuakesProvider
+    @State var quakes = staticData
     @State var editMode: EditMode = .inactive
 //    @State var selectMode: SelectMode = .inactive
     @State var isLoading = false
@@ -35,11 +36,37 @@ struct Quakes: View {
     var body: some View {
         NavigationView {
             List(selection: $selection) {
-//                ForEach(quakes) { quake in
-////                    QuakeRow
-//                }
+                ForEach(quakes) { quake in
+                    QuakeRow(quake: quake)
+                }
+                .onDelete(perform: deleteQuakes)
             }
+            .listStyle(.inset)
+            .navigationTitle(title)
+//            .toolbar(content: toolba)
+            .environment(\.editMode, $editMode)
+            .refreshable {
+                fetchQuakes()
+            }
+            .alert(isPresented: $hasError, error: error) {}
         }
+    }
+}
+
+extension Quakes {
+    var title: String {
+        return "Earthquakes"
+    }
+    
+    func deleteQuakes(at offsets: IndexSet) {
+        quakes.remove(atOffsets: offsets)
+    }
+    
+    func fetchQuakes() {
+        isLoading = true
+        self.quakes = staticData
+        lastUpdated = Date().timeIntervalSinceNow
+        isLoading = false
     }
 }
 
