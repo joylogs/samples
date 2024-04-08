@@ -110,13 +110,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		763D8DD62BC29D4B00B8CE18 /* Configuration */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Configuration;
-			sourceTree = "<group>";
-		};
 		76E776112BC2DC6200302679 /* ToolbarContent */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +145,6 @@
 			isa = PBXGroup;
 			children = (
 				763D8DD92BC29F5B00B8CE18 /* EarthquakesApp.swift */,
-				763D8DD62BC29D4B00B8CE18 /* Configuration */,
 				763D8DD52BC29C8900B8CE18 /* Views */,
 				763D8DD12BC28D0D00B8CE18 /* Resources */,
 				76EAEECA2BBB1729008B6C2D /* Models */,
