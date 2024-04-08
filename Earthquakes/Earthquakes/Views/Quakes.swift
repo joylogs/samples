@@ -25,7 +25,7 @@ struct Quakes: View {
     var lastUpdated = Date.distantFuture.timeIntervalSince1970
     
     @EnvironmentObject var provider: QuakesProvider
-    @State var quakes = staticData
+//    @State var quakes = staticData
     @State var editMode: EditMode = .inactive
     @State var selectMode: SelectMode = .inactive
     @State var isLoading = false
@@ -71,7 +71,7 @@ extension Quakes {
     
     func deleteQuakes(for codes: Set<String>) {
         var offsetsToDelete: IndexSet = []
-        for (index, element) in quakes.enumerated() {
+        for (index, element) in provider.quakes.enumerated() {
             if codes.contains(element.code) {
                 offsetsToDelete.insert(index)
             }
