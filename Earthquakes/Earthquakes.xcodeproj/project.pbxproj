@@ -94,6 +94,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7631D55D2BC6CE9D0083DDDF /* Caching */ = {
+			isa = PBXGroup;
+			children = (
+				76E423CD2BC5BDD4006773F2 /* CacheEntryObject.swift */,
+				76E423CB2BC5BD56006773F2 /* CacheEntry.swift */,
+				76E423CF2BC5BF06006773F2 /* NSCache+Subscript.swift */,
+			);
+			path = Caching;
+			sourceTree = "<group>";
+		};
 		763D8DD12BC28D0D00B8CE18 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				763D8DD92BC29F5B00B8CE18 /* EarthquakesApp.swift */,
+				7631D55D2BC6CE9D0083DDDF /* Caching */,
 				763D8DD52BC29C8900B8CE18 /* Views */,
 				763D8DD12BC28D0D00B8CE18 /* Resources */,
 				76EAEECA2BBB1729008B6C2D /* Models */,
@@ -169,9 +180,6 @@
 				76F90D642BBDD15C00024B57 /* GeoJSON.swift */,
 				76DC1A982BBF280100B9DE21 /* QuakeLocation.swift */,
 				76E7760D2BC2CE5600302679 /* Quake+Color.swift */,
-				76E423CB2BC5BD56006773F2 /* CacheEntry.swift */,
-				76E423CD2BC5BDD4006773F2 /* CacheEntryObject.swift */,
-				76E423CF2BC5BF06006773F2 /* NSCache+Subscript.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
