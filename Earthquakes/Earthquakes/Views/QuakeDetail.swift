@@ -11,6 +11,7 @@ struct QuakeDetail: View {
     var quake: Quake
     var body: some View {
         VStack {
+            QuakeMagnitude(quake: quake)
             Text(quake.place)
                 .font(.title3)
             .bold()
@@ -18,8 +19,8 @@ struct QuakeDetail: View {
                 .foregroundStyle(Color.secondary)
             
             if let location = quake.location {
-                Text("Latitude: \(location.latitude)")
-                Text("Longitude: \(location.longitude)")
+                Text("Latitude: \(location.latitude.formatted(.number.precision(.fractionLength(3))))")
+                Text("Longitude: \(location.longitude.formatted(.number.precision(.fractionLength(3))))")
             }
         }
     }

@@ -9,7 +9,7 @@ import Foundation
 
 extension Quake {
     static var preview: Quake {
-        let quake = Quake(magnitude: 0.34,
+        var quake = Quake(magnitude: 0.34,
                           place: "Shakey Acres",
                           time: Date(timeIntervalSinceNow: -1000),
                           code: "nc73649170",
