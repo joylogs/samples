@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		762030522BC85E5800DB32C1 /* Quake+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762030512BC85E5800DB32C1 /* Quake+Preview.swift */; };
 		762030542BC85EF500DB32C1 /* QuakeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762030532BC85EF500DB32C1 /* QuakeDetail.swift */; };
+		762030562BC9B24200DB32C1 /* QuakeTestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762030552BC9B24200DB32C1 /* QuakeTestData.swift */; };
 		763D8DD02BC284D200B8CE18 /* QuakeClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D8DCF2BC284D200B8CE18 /* QuakeClient.swift */; };
 		763D8DD32BC290E500B8CE18 /* TestDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763D8DD22BC290E500B8CE18 /* TestDownloader.swift */; };
 		763D8DD42BC2922C00B8CE18 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76EAEEDD2BBB2931008B6C2D /* TestData.swift */; };
@@ -50,6 +51,7 @@
 /* Begin PBXFileReference section */
 		762030512BC85E5800DB32C1 /* Quake+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Preview.swift"; sourceTree = "<group>"; };
 		762030532BC85EF500DB32C1 /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetail.swift; sourceTree = "<group>"; };
+		762030552BC9B24200DB32C1 /* QuakeTestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeTestData.swift; sourceTree = "<group>"; };
 		763D8DCF2BC284D200B8CE18 /* QuakeClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeClient.swift; sourceTree = "<group>"; };
 		763D8DD22BC290E500B8CE18 /* TestDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDownloader.swift; sourceTree = "<group>"; };
 		763D8DD72BC29DF400B8CE18 /* QuakesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesProvider.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				76EAEEBF2BBB1635008B6C2D /* Assets.xcassets */,
 				76EAEEDD2BBB2931008B6C2D /* TestData.swift */,
 				763D8DD22BC290E500B8CE18 /* TestDownloader.swift */,
+				762030552BC9B24200DB32C1 /* QuakeTestData.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -322,6 +325,7 @@
 				7666EC912BC1CAB100E7C5D3 /* HTTPDataDownloader.swift in Sources */,
 				76E776132BC2DCB400302679 /* SelectButton.swift in Sources */,
 				76E423CE2BC5BDD4006773F2 /* CacheEntryObject.swift in Sources */,
+				762030562BC9B24200DB32C1 /* QuakeTestData.swift in Sources */,
 				763D8DD32BC290E500B8CE18 /* TestDownloader.swift in Sources */,
 				763D8DD02BC284D200B8CE18 /* QuakeClient.swift in Sources */,
 				76E7760E2BC2CE5600302679 /* Quake+Color.swift in Sources */,
