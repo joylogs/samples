@@ -139,10 +139,18 @@
 				76E7760B2BC2CABB00302679 /* QuakeMagnitude.swift */,
 				76E7760F2BC2D36C00302679 /* QuakeRow.swift */,
 				76E776112BC2DC6200302679 /* ToolbarContent */,
+				7690296C2BCDA2FA00C637F4 /* QuakeDetail */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7690296C2BCDA2FA00C637F4 /* QuakeDetail */ = {
+			isa = PBXGroup;
+			children = (
 				762030532BC85EF500DB32C1 /* QuakeDetail.swift */,
 				7658511C2BCC499C00F3C3EE /* QuakeDetailMap.swift */,
 			);
-			path = Views;
+			path = QuakeDetail;
 			sourceTree = "<group>";
 		};
 		76E776112BC2DC6200302679 /* ToolbarContent */ = {
